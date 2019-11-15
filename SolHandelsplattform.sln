@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlackFriday", "BlackFriday\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IEGEasyCreditCardService", "IEGEasyCreditCardService\IEGEasyCreditCardService.csproj", "{2E7B89A5-C69E-4D82-AD7F-25F49789B557}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductDbService", "ProductDbService\ProductDbService.csproj", "{64A48E14-C3D2-456D-AE21-DF3B4947DCA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductDbService", "ProductDbService\ProductDbService.csproj", "{64A48E14-C3D2-456D-AE21-DF3B4947DCA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductFTPService", "ProductFTPService\ProductFTPService.csproj", "{3A7CA22D-E6E6-4079-97D2-0CCD360ADAAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductFTPService", "ProductFTPService\ProductFTPService.csproj", "{3A7CA22D-E6E6-4079-97D2-0CCD360ADAAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentService", "PaymentService\PaymentService.csproj", "{01D13215-B046-4082-A236-11B155C9B4B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{3A7CA22D-E6E6-4079-97D2-0CCD360ADAAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A7CA22D-E6E6-4079-97D2-0CCD360ADAAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A7CA22D-E6E6-4079-97D2-0CCD360ADAAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01D13215-B046-4082-A236-11B155C9B4B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01D13215-B046-4082-A236-11B155C9B4B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01D13215-B046-4082-A236-11B155C9B4B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01D13215-B046-4082-A236-11B155C9B4B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

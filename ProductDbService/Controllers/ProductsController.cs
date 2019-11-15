@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Configuration;
 using System.Net;
 using Microsoft.Azure.Cosmos;
+using Microsoft.Extensions.Configuration;
 
 namespace ProductDbService.Controllers
 {
@@ -14,28 +15,31 @@ namespace ProductDbService.Controllers
     public class ProductsController : ControllerBase
     {
         private static readonly string EndpointUri = "https://iegproductsdb.documents.azure.com:443/";
-        private static readonly string PrimaryKey = "VVgqSae3zWC9XNXc2MfhQcw5y2LI4JQZQZOGXG8vy0zAbzayP0NgZB5HtFE8knAo2v2oRBlmfEdTiG2TC1zdgQ==";
         private CosmosClient cosmosClient;
         private Database database;
         private Container container;
         private string databaseId = "ProductDatabase";
         private string containerId = "ProductContainer";
 
-        public ProductsController() : base()
-        {            
+        private IConfiguration _configuration;
+
+        public ProductsController(IConfiguration configuration) : base()
+        {
+            _configuration = configuration;
             this.InitDatabaseConnectionAsync();
         }
-                
+
         // GET api/values
         [HttpGet]
         public async Task<ActionResult<IEnumerable<string>>> GetAsync()
         {
             return await GetProductsFromDB();
         }
-                public async Task InitDatabaseConnectionAsync()
+
+        public async Task InitDatabaseConnectionAsync()
         {
             // Create a new instance of the Cosmos Client
-            this.cosmosClient = new CosmosClient(EndpointUri, PrimaryKey);
+            this.cosmosClient = new CosmosClient(EndpointUri, _configuration["PrimaryKey"]);
             this.database = await this.cosmosClient.CreateDatabaseIfNotExistsAsync(databaseId);
             this.container = await this.database.CreateContainerIfNotExistsAsync(containerId, "/Name");
         }
