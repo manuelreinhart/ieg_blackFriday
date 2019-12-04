@@ -11,7 +11,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductDbService", "Product
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductFTPService", "ProductFTPService\ProductFTPService.csproj", "{3A7CA22D-E6E6-4079-97D2-0CCD360ADAAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentService", "PaymentService\PaymentService.csproj", "{01D13215-B046-4082-A236-11B155C9B4B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaymentService", "PaymentService\PaymentService.csproj", "{01D13215-B046-4082-A236-11B155C9B4B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEGConsulService", "IEGConsulService\IEGConsulService.csproj", "{EA9EB838-7DC8-42E7-B689-6036CB68357C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEGServiceConfiguration", "IEGServiceConfiguration\IEGServiceConfiguration.csproj", "{4CF834FC-5EA0-4E61-BDFB-1D87706461BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IECSecretService", "IECSecretService\IECSecretService.csproj", "{14E47559-C990-4C19-8073-82D8EB8E4C26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEGWebhookService", "IEGWebhookService\IEGWebhookService.csproj", "{E172D8D2-2D22-4741-9650-C4CCDEA72F7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +47,22 @@ Global
 		{01D13215-B046-4082-A236-11B155C9B4B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01D13215-B046-4082-A236-11B155C9B4B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01D13215-B046-4082-A236-11B155C9B4B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA9EB838-7DC8-42E7-B689-6036CB68357C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA9EB838-7DC8-42E7-B689-6036CB68357C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA9EB838-7DC8-42E7-B689-6036CB68357C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA9EB838-7DC8-42E7-B689-6036CB68357C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CF834FC-5EA0-4E61-BDFB-1D87706461BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CF834FC-5EA0-4E61-BDFB-1D87706461BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CF834FC-5EA0-4E61-BDFB-1D87706461BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CF834FC-5EA0-4E61-BDFB-1D87706461BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14E47559-C990-4C19-8073-82D8EB8E4C26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14E47559-C990-4C19-8073-82D8EB8E4C26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14E47559-C990-4C19-8073-82D8EB8E4C26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14E47559-C990-4C19-8073-82D8EB8E4C26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E172D8D2-2D22-4741-9650-C4CCDEA72F7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E172D8D2-2D22-4741-9650-C4CCDEA72F7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E172D8D2-2D22-4741-9650-C4CCDEA72F7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E172D8D2-2D22-4741-9650-C4CCDEA72F7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
